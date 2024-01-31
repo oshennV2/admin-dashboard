@@ -1,0 +1,199 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Use 100vh (viewport height) for the grid container */
+
+}
+
+html{
+    background-color: rgb(29 161 242);
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom:10px ;
+}
+
+#dash{
+    font-family: roboto;
+}
+
+.grid-container {
+    height: 150%; /* Use 100vh (viewport height) for the grid container */
+
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 3.5fr;
+}
+
+nav {
+    grid-row: 2 span; /* Use "span 1" to explicitly define one row */
+    background-color: rgb(29 161 242);
+
+}
+
+nav>h1,li{
+    font-family: roboto;
+    font-weight: 900;    
+    color: white;
+}
+
+.nav-list-last{
+    margin-top: 80px;
+}
+
+.dashboard-div{
+    display:flex;
+    align-items: center;
+    margin-left: 2px;
+}
+.dashboard-div>h1{
+color: white;
+}
+.icon{
+    margin-right: 4px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 5px 8px #888888;
+}
+.headbar-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin-right: 300px;
+    border-radius: 8px;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgba(223, 223, 223, 0.637);
+    height: 23px;
+    width: 500px;
+}
+
+#search-icon{
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+#bell-icon{
+    margin-right: 12px;
+}
+
+h2{
+    font-family: roboto;
+    margin-left: 15px;
+    margin-right: 35px;
+}
+
+
+
+.headbar-two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-two-box{
+    display: flex;
+    align-items: center;
+    width: 330px;
+    margin-left: 40px;
+}
+
+.textBox-head{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
+
+.username{
+    font-family: roboto;
+    font-size: 25px;
+}
+.btn{
+    margin-right: 30px;
+}
+
+button{
+    padding: 7px;
+    font-family: roboto;
+    font-weight: 700;
+    margin-right: 30px;
+    width: 80px;
+    border-radius:22px ;
+    color: white;
+    border-color: rgba(41, 167, 245, 0.753);
+    background-color: rgb(27, 154, 233);
+}
+
+
+
+section{
+    display: grid;
+    grid-template-columns:  4fr 1fr ;
+    grid-template-rows: 1fr 4fr 0.5fr 4fr ;
+    background-color: rgb(220, 221, 226);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.card-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.card{
+    width: 400px;
+    height: 230px;
+    background-color: white;
+    border-left:7px solid #db7f34;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 8px 8px 8px grey;
+    
+}
+
+.panel{
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px grey;
+
+}
+#panel-two{
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px grey;
+
+}
+
+.panel>p{
+    font-size: 12px;
+}
+.panel>h4{
+    font-family: roboto;
+}
+
+#panel-two>div{
+    font-size: 20px;
+    margin-left: 20px;
+}
